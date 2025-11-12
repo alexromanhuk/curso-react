@@ -14,6 +14,7 @@
 
   // 🛠 Formatação e Lint
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": true,
   "editor.formatOnSave": true,
 
   "editor.codeActionsOnSave": {

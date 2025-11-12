@@ -1,15 +1,20 @@
-import './styles/theme.css';
+import "./styles/theme.css";
 import './styles/global.css';
-import { Heading } from './components/Heading';
 
-export function App(){
-    console.log('Oi');
+
+export function App() {
     return (
         <>
-            <Heading/>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum tempore optio nulla id illum possimus, architecto sit vitae repudiandae numquam. Nulla, veniam! Assumenda veniam neque quis eum repellat, odio odit?
-            </p>
+            <div className='container'>
+                <div className='content'>
+                    <section>
+                        Teste - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum cumque
+                        incidunt accusamus commodi quasi sit, doloribus in fugiat, repellat
+                        laudantium voluptas praesentium labore dolore unde! Aliquam, dolorem! A,
+                        quia rerum!
+                    </section>
+                </div>
+            </div>
         </>
-    )
+    );
 }
