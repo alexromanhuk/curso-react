@@ -28,6 +28,8 @@ body {
   padding: 2.4rem;
 }
 
+.container.fluid {}
+
 .content {
   margin: 3.2rem 0;
 }
