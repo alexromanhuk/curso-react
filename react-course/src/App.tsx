@@ -4,15 +4,28 @@ import { Input } from './components/Input';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Cycles } from './components/Cycles';
-import { Button } from "./components/Button";
+import { Button } from './components/Button';
+import { Footer } from './components/Footer';
 import { PlayCircleIcon } from 'lucide-react';
+import { Heading } from './components/Heading';
 
 import './styles/global.css';
 import './styles/theme.css'
 
 export function App() {
+    let numero  = 0;
+
+    function handleClick() {
+        numero++;
+        console.log(numero);
+    }
+
     return (
         <>
+            <Heading>
+                Número: {numero}
+            </Heading>
+            <button onClick={handleClick}>Aumenta</button>
             <Container>
                 <Logo/>                
             </Container>
@@ -21,12 +34,12 @@ export function App() {
              </Container>
             <Container>
                 <CountDown/>
-             </Container>
+            </Container>
             <Container>
                 <form action="form">
 
                     <div className='formRow'>
-                        <Input labelText='Task' 
+                        <Input labelText={numero.toString()} 
                             id='menuInput' 
                             type='text' 
                             placeholder='Digite algo'
@@ -48,6 +61,10 @@ export function App() {
 
                 </form>
              </Container>
+
+             <Container>
+                <Footer></Footer>
+            </Container>
         </>
     );
 }
