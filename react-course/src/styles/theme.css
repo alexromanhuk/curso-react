@@ -52,4 +52,9 @@
 
   --link-color: #0b8a60;
   --link-hover: #065f46;
+
+  --success: #22c55e;
+  --warning: #eab308;
+  --error: #991b1b;
+  --info: #0ea5e9;
 }
