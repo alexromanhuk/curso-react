@@ -1,5 +1,5 @@
-import { PlayCircleIcon } from "lucide-react";
 import { Cycles } from "../Cycles";
+import { PlayCircleIcon } from "lucide-react";
 import { DefaultInput } from "../DefaultInput";
 import { DefaultButton } from "../DefaultButton";
 
